@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "stream-utils/unpipe",
   "devDependencies": {
-    "istanbul": "0.3.17",
+    "istanbul": "0.3.19",
     "mocha": "2.2.5",
     "readable-stream": "2.0.2"
   },
