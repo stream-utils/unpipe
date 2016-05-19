@@ -18,7 +18,7 @@ module.exports = unpipe
  * @private
  */
 
-function hasPipeDataListeners(stream) {
+function hasPipeDataListeners (stream) {
   var listeners = stream.listeners('data')
 
   for (var i = 0; i < listeners.length; i++) {
@@ -37,7 +37,7 @@ function hasPipeDataListeners(stream) {
  * @public
  */
 
-function unpipe(stream) {
+function unpipe (stream) {
   if (!stream) {
     throw new TypeError('argument stream is required')
   }

@@ -159,29 +159,29 @@ describe('unpipe(stream)', function () {
   })
 })
 
-function SlowOldStream() {
+function SlowOldStream () {
   stream.Stream.call(this)
 }
 
 util.inherits(SlowOldStream, stream.Stream)
 
-function SlowReadStream() {
+function SlowReadStream () {
   stream.Readable.call(this)
 }
 
 util.inherits(SlowReadStream, stream.Readable)
 
-SlowReadStream.prototype._read = function _read() {
+SlowReadStream.prototype._read = function _read () {
   setTimeout(this.push.bind(this, '.'), 1000)
 }
 
-function SlowWriteStream() {
+function SlowWriteStream () {
   stream.Writable.call(this)
 }
 
 util.inherits(SlowWriteStream, stream.Writable)
 
-SlowWriteStream.prototype._write = function _write(chunk, encoding, callback) {
+SlowWriteStream.prototype._write = function _write (chunk, encoding, callback) {
   this.emit('write')
   setTimeout(callback, 1000)
 }
