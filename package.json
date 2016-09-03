@@ -21,7 +21,8 @@
     "index.js"
   ],
   "engines": {
-    "node": ">= 0.8"
+    "node": ">= 0.8",
+    "npm": "1.2.8000 || >= 1.4.16"
   },
   "scripts": {
     "lint": "eslint .",
