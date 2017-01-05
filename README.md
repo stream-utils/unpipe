@@ -38,7 +38,7 @@ actions done in `stream.pipe(dest)`.
 [npm-image]: https://img.shields.io/npm/v/unpipe.svg
 [npm-url]: https://npmjs.org/package/unpipe
 [node-image]: https://img.shields.io/node/v/unpipe.svg
-[node-url]: http://nodejs.org/download/
+[node-url]: https://nodejs.org/en/download/
 [travis-image]: https://img.shields.io/travis/stream-utils/unpipe.svg
 [travis-url]: https://travis-ci.org/stream-utils/unpipe
 [coveralls-image]: https://img.shields.io/coveralls/stream-utils/unpipe.svg
